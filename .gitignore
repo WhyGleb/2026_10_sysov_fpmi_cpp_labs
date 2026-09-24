@@ -167,3 +167,4 @@ $RECYCLE.BIN/
 
 _NCrunch*
 semester_1/lab1_introduction/CMakeLists.txt
+.clang-format
