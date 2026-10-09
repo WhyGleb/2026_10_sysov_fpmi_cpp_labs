@@ -11,6 +11,7 @@ void input_arr(double* arr, int n) {
 	for (int i = 0; i < n; i++) {
 		if (!(std::cin >> arr[i])) {
 			std::cout << "Вы ввели не число\n";
+			delete[] arr;
 			exit(-1);
 		}
 	}
@@ -47,6 +48,7 @@ void choice(string k, double* arr, int n, std::mt19937& gen) {
 		int a, b;
 		if (!(std::cin >> a >> b)) {
 			std::cout << "Вы ввели не число\n";
+			delete[] arr;
 			exit(-1);
 		}
 		random_input_arr(a, b, n, arr, gen);
@@ -94,10 +96,12 @@ int main() {
 	int N;
 	if (!(std::cin >> N)) {
 		std::cout << "Вы ввели не число \n";
+		delete[] arr;
 		return -1;
 	}
-	if (n <= 0) {
+	if (N <= 0) {
 		std::cout << "Количество не может быть меньше 0\n";
+		delete[] arr;
 		return -1;
 	}
 	remove_del(arr, n, N);
