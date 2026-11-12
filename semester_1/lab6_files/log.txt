@@ -1,0 +1,173 @@
+11/12/26 19:51:40opening file "input.txt"
+11/12/26 19:51:40file "input.txt" has been opened successfully
+11/12/26 19:51:40reading from "input.txt"
+11/12/26 19:51:40got string:"a22aa32aa1a 78  22 "
+11/12/26 19:51:40got delimiters:" "11/12/26 19:51:40finding words in string
+11/12/26 19:51:40words found: a22aa32aa1a  78  22 
+11/12/26 19:51:40finding numbers in words
+11/12/26 19:51:40numbers found: 78  22 
+11/12/26 19:51:40finding number with biggest absolute value
+11/12/26 19:51:40number with biggest absolute value"78"
+11/12/26 19:51:40writing result to "output.txt"
+11/12/26 19:51:40progam has ended with code 011/12/26 19:54:35opening file "input.txt"
+11/12/26 19:54:35file "input.txt" has been opened successfully
+11/12/26 19:54:35reading from "input.txt"
+11/12/26 19:54:35got string:"a22aa32aa1a 78  22 "
+11/12/26 19:54:35got delimiters:" "11/12/26 19:54:35finding words in string
+11/12/26 19:54:35words found: a22aa32aa1a  78  22 
+11/12/26 19:54:35finding numbers in words
+11/12/26 19:54:35numbers found: 78  22 
+11/12/26 19:54:35finding number with biggest absolute value
+11/12/26 19:54:35number with biggest absolute value"78"
+11/12/26 19:54:35writing result to "output.txt"
+11/12/26 19:54:35progam has ended with code 02026-11-12 19:57:07opening file "input.txt"
+2026-11-12 19:57:07file "input.txt" has been opened successfully
+2026-11-12 19:57:07reading from "input.txt"
+2026-11-12 19:57:07got string:"a22aa32aa1a 78  22 "
+2026-11-12 19:57:07got delimiters:" "2026-11-12 19:57:07finding words in string
+2026-11-12 19:57:07words found: a22aa32aa1a  78  22 
+2026-11-12 19:57:07finding numbers in words
+2026-11-12 19:57:07numbers found: 78  22 
+2026-11-12 19:57:07finding number with biggest absolute value
+2026-11-12 19:57:07number with biggest absolute value"78"
+2026-11-12 19:57:07writing result to "output.txt"
+2026-11-12 19:57:07progam has ended with code 02026.11.12 19:59:51 | opening file "input.txt"
+2026.11.12 19:59:51file "input.txt" has been opened successfully
+2026.11.12 19:59:51 | reading from "input.txt"
+2026.11.12 19:59:51 | got string:"a22aa32aa1a 78  22 "
+2026.11.12 19:59:51 | got delimiters:" a"2026.11.12 19:59:51 | finding words in string
+2026.11.12 19:59:51 | words found: 22  32  1  78  22 
+2026.11.12 19:59:51 | finding numbers in words
+2026.11.12 19:59:51 | numbers found: 22  32  1  78  22 
+2026.11.12 19:59:51 | finding number with biggest absolute value
+2026.11.12 19:59:51 | number with biggest absolute value"78"
+2026.11.12 19:59:51 | writing result to "output.txt"
+2026.11.12 19:59:51 | progam has ended with code 02026.11.12 20:14:35 | opening file "input.txt"
+2026.11.12 20:14:35file "input.txt" has been opened successfully
+2026.11.12 20:14:35 | reading from "input.txt"
+2026.11.12 20:14:35 | got string:"a22aa32aa1a 78  22 "
+2026.11.12 20:14:35 | got delimiters:" a"2026.11.12 20:14:35 | finding words in string
+2026.11.12 20:14:35 | words found: 22  32  1  78  22 
+2026.11.12 20:14:35 | finding numbers in words
+2026.11.12 20:14:35 | numbers found: 22  32  1  78  22 
+2026.11.12 20:14:35 | finding number with biggest absolute value
+2026.11.12 20:14:35 | number with biggest absolute value"78"
+2026.11.12 20:14:35 | opening file "output.txt"
+2026.11.12 20:14:35 | file "output.txt" has been opened successfully
+2026.11.12 20:14:35 | writing result to "output.txt"
+2026.11.12 20:14:35 | progam has ended with code 02026.11.12 21:03:56 | opening file "input.txt"
+2026.11.12 21:03:56file "input.txt" has been opened successfully
+2026.11.12 21:04:47 | opening file "input.txt"
+2026.11.12 21:04:47 | file "input.txt" has been opened successfully
+2026.11.12 21:07:43 | opening file "input.txt"
+2026.11.12 21:07:43 | file "input.txt" has been opened successfully
+2026.11.12 21:07:43 | program has ended with code 1
+2026.11.12 21:08:25 | opening file "input.txt"
+2026.11.12 21:08:25 | file "input.txt" has been opened successfully
+2026.11.12 21:08:25 | reading from "input.txt"
+2026.11.12 21:08:25 | got string:"aaa2332v23le"
+2026.11.12 21:08:25 | got delimiters:" avel"2026.11.12 21:08:25 | finding words in string
+2026.11.12 21:08:25 | words found: 2332  23 
+2026.11.12 21:08:25 | finding numbers in words
+2026.11.12 21:08:25 | numbers found: 2332  23 
+2026.11.12 21:08:25 | finding number with biggest absolute value
+2026.11.12 21:08:25 | number with biggest absolute value"2332"
+2026.11.12 21:08:25 | opening file "output.txt"
+2026.11.12 21:08:25 | file "output.txt" has been opened successfully
+2026.11.12 21:08:25 | writing result to "output.txt"
+2026.11.12 21:08:25 | progam has ended with code 02026.11.12 21:42:57 | opening file "input.txt"
+2026.11.12 21:42:57 | file "input.txt" has been opened successfully
+2026.11.12 21:42:57 | reading from "input.txt"
+2026.11.12 21:42:57 | got string:"aa007aa6a5a+8a"
+2026.11.12 21:42:57 | got delimiters:"a"
+2026.11.12 21:42:57 | finding words in string
+2026.11.12 21:42:57 | words found: 007  6  5  +8 
+2026.11.12 21:42:57 | finding numbers in words
+2026.11.12 21:42:57 | numbers found: 7  6  5  8 
+2026.11.12 21:42:57 | finding number with biggest absolute value
+2026.11.12 21:42:57 | number with biggest absolute value"8"
+2026.11.12 21:42:57 | opening file "output.txt"
+2026.11.12 21:42:57 | file "output.txt" has been opened successfully
+2026.11.12 21:42:57 | writing result to "output.txt"
+2026.11.12 21:42:57 | progam has ended with code 02026.11.12 21:48:38 | opening file "input.txt"
+2026.11.12 21:48:38 | file "input.txt" has been opened successfully
+2026.11.12 21:48:38 | reading from "input.txt"
+2026.11.12 21:48:38 | got string:"aa007aa6a5a+8a"
+2026.11.12 21:48:38 | got delimiters:"a"
+2026.11.12 21:48:38 | finding words in string
+2026.11.12 21:48:38 | words found: 007  6  5  +8 
+2026.11.12 21:48:38 | finding numbers in words
+2026.11.12 21:48:38 | numbers found: 7  6  5  8 
+2026.11.12 21:48:38 | finding number with biggest absolute value
+2026.11.12 21:48:38 | number with biggest absolute value"8"
+2026.11.12 21:48:38 | opening file "output.txt"
+2026.11.12 21:48:38 | file "output.txt" has been opened successfully
+2026.11.12 21:48:38 | writing result to "output.txt"
+2026.11.12 21:48:38 | progam has ended with code 02026.11.12 21:48:58 | opening file "input.txt"
+2026.11.12 21:48:58 | file "input.txt" has been opened successfully
+2026.11.12 21:48:58 | reading from "input.txt"
+2026.11.12 21:48:58 | got string:"aa007aa6a5a+8a"
+2026.11.12 21:48:58 | got delimiters:"a"
+2026.11.12 21:48:58 | finding words in string
+2026.11.12 21:48:58 | words found: 007  6  5  +8 
+2026.11.12 21:48:58 | finding numbers in words
+2026.11.12 21:48:58 | numbers found: 7  6  5  8 
+2026.11.12 21:48:58 | finding number with biggest absolute value
+2026.11.12 21:48:58 | number with biggest absolute value"8"
+2026.11.12 21:48:58 | opening file "output.txt"
+2026.11.12 21:48:58 | file "output.txt" has been opened successfully
+2026.11.12 21:48:58 | writing result to "output.txt"
+2026.11.12 21:48:58 | progam has ended with code 02026.11.12 22:44:51 | opening file "input.txt"
+2026.11.12 22:44:51 | file "input.txt" has been opened successfully
+2026.11.12 22:44:51 | reading from "input.txt"
+2026.11.12 22:44:51 | got string:"aa007aa6a5a+8a"
+2026.11.12 22:44:51 | got delimiters:"a"
+2026.11.12 22:44:51 | finding words in string
+2026.11.12 22:44:51 | words found: 007  6  5  +8 
+2026.11.12 22:44:51 | finding numbers in words
+2026.11.12 22:44:51 | numbers found: 7 6 5 8
+2026.11.12 22:44:51 | finding number with biggest absolute value
+2026.11.12 22:44:51 | number with biggest absolute value" 8"
+2026.11.12 22:44:51 | opening file "output.txt"
+2026.11.12 22:44:51 | file "output.txt" has been opened successfully
+2026.11.12 22:44:51 | writing result to "output.txt"
+2026.11.12 22:44:51 | progam has ended with code 02026.11.12 22:46:45 | opening file "input.txt"
+2026.11.12 22:46:45 | file "input.txt" has been opened successfully
+2026.11.12 22:46:45 | reading from "input.txt"
+2026.11.12 22:46:45 | got string:"aa007aa6a5a+8a"
+2026.11.12 22:46:45 | got delimiters:" "
+2026.11.12 22:46:45 | finding words in string
+2026.11.12 22:46:45 | words found: aa007aa6a5a+8a 
+2026.11.12 22:51:44 | opening file "input.txt"
+2026.11.12 22:51:44 | file "input.txt" has been opened successfully
+2026.11.12 22:51:44 | reading from "input.txt"
+2026.11.12 22:51:44 | got string:"aa007aa6a5a+8a"
+2026.11.12 22:51:44 | got delimiters:" "
+2026.11.12 22:51:44 | finding words in string
+2026.11.12 22:51:44 | words found: aa007aa6a5a+8a 
+2026.11.12 22:51:52 | opening file "input.txt"
+2026.11.12 22:51:52 | file "input.txt" has been opened successfully
+2026.11.12 22:51:52 | reading from "input.txt"
+2026.11.12 22:51:52 | got string:"aa007aa6a5a+8a"
+2026.11.12 22:51:52 | got delimiters:" "
+2026.11.12 22:51:52 | finding words in string
+2026.11.12 22:51:52 | words found: aa007aa6a5a+8a 
+2026.11.12 22:51:52 | finding numbers in words
+2026.11.12 22:51:52 | numbers found:
+2026.11.12 22:51:52 | Error: string haven't integers
+2026.11.12 22:51:52 | program has ended with code 1
+2026.11.12 22:57:57 | opening file "input.txt"
+2026.11.12 22:57:57 | file "input.txt" has been opened successfully
+2026.11.12 22:57:57 | reading from "input.txt"
+2026.11.12 22:57:57 | got string:"aa07a+7a7aa"
+2026.11.12 22:57:57 | got delimiters:"a "
+2026.11.12 22:57:57 | finding words in string
+2026.11.12 22:57:57 | words found: 07  +7  7 
+2026.11.12 22:57:57 | finding numbers in words
+2026.11.12 22:57:57 | numbers found: 7 7 7
+2026.11.12 22:57:57 | finding number with biggest absolute value
+2026.11.12 22:57:57 | number with biggest absolute value" 7"
+2026.11.12 22:57:57 | opening file "output.txt"
+2026.11.12 22:57:57 | file "output.txt" has been opened successfully
+2026.11.12 22:57:57 | writing result to "output.txt"
+2026.11.12 22:57:57 | progam has ended with code 0
