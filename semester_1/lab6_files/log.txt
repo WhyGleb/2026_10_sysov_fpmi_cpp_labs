@@ -170,4 +170,18 @@
 2026.11.12 22:57:57 | opening file "output.txt"
 2026.11.12 22:57:57 | file "output.txt" has been opened successfully
 2026.11.12 22:57:57 | writing result to "output.txt"
-2026.11.12 22:57:57 | progam has ended with code 0
+2026.11.12 22:57:57 | progam has ended with code 02026.11.12 23:54:28 | opening file "input.txt"
+2026.11.12 23:54:28 | file "input.txt" has been opened successfully
+2026.11.12 23:54:28 | reading from "input.txt"
+2026.11.12 23:54:28 | got string:"aa07a+7a7aa"
+2026.11.12 23:54:28 | got delimiters:"a "
+2026.11.12 23:54:28 | finding words in string
+2026.11.12 23:54:28 | words found: 07  +7  7 
+2026.11.12 23:54:28 | finding numbers in words
+2026.11.12 23:54:28 | numbers found: 7 7 7
+2026.11.12 23:54:28 | finding number with biggest absolute value
+2026.11.12 23:54:28 | number with biggest absolute value" 7"
+2026.11.12 23:54:28 | writing result to "output.txt"
+2026.11.12 23:54:28 | opening file "output.txt"
+2026.11.12 23:54:28 | file "output.txt" has been opened successfully
+2026.11.12 23:54:28 | progam has ended with code 0

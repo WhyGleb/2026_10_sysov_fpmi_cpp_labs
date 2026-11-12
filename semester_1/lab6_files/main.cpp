@@ -183,7 +183,6 @@ int main() {
 	const string output_filename = "output.txt";
 	const string log_filename = "log.txt";
 	std::ifstream fin{input_filename};
-	std::ofstream fout{output_filename};
 	std::ofstream log_fout{log_filename, std::ios::app};
 	try {
 		setlocale(LC_ALL, "ru-RU.UTF-8");
@@ -199,6 +198,7 @@ int main() {
 		// cout << "Введите разделители ";
 		string delimiters;
 		getline(fin, delimiters);
+		fin.close();
 		log_fout << FormatTime(Now(), false) << " | " << "got delimiters:\"" + delimiters + "\"\n";
 		vector<string> words = split_string(log_fout, input, delimiters);
 		vector<number_info> chisla = str_to_int(log_fout, words);
@@ -217,11 +217,14 @@ int main() {
 			}
 		}
 		// cout << "Строка после замены\n " << input << std::endl;
-		open_file(log_fout, fout, output_filename);
 		log_fout << FormatTime(Now(), false) << " | "
 				 << "writing result to \"" + output_filename + "\"\n";
+		std::ofstream fout{output_filename};
+		open_file(log_fout, fout, output_filename);
 		fout << input;
+		fout.close();
 		log_fout << FormatTime(Now(), false) << " | " << "progam has ended with code 0";
+		log_fout.close();
 		return 0;
 
 	} catch (const std::string& e) {
