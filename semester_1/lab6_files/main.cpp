@@ -56,16 +56,13 @@ bool word_check_on_number(const string& word) {
 	}
 	return (word.find_first_not_of(numbers, 0)) == string::npos;
 }
-void output_vec(std::ofstream& log_fout, vector<int>& chisla) {
-	log_fout << FormatTime(Now(), false) << " | " << "numbers found:";
-	for (int i = 0; i < chisla.size(); i++) {
-		log_fout << " " << chisla[i] << " ";
-	}
-	log_fout << std::endl;
+void log_print(std::ofstream& log_fout) {
+	log_fout << FormatTime(Now(), false) << " | ";
 }
 
 void output_vec(std::ofstream& log_fout, vector<string>& words) {
-	log_fout << FormatTime(Now(), false) << " | " << "words found:";
+	log_print(log_fout);
+	log_fout << "words found:";
 	for (int i = 0; i < words.size(); i++) {
 		log_fout << " " << words[i] << " ";
 	}
@@ -73,7 +70,8 @@ void output_vec(std::ofstream& log_fout, vector<string>& words) {
 }
 
 vector<string> split_string(std::ofstream& log_fout, string& text, string& delimiters) {
-	log_fout << FormatTime(Now(), false) << " | " << "finding words in string\n";
+	log_print(log_fout);
+	log_fout << "finding words in string\n";
 	vector<string> words;
 	string::size_type beg_index = 0, end_index = text.find_first_of(delimiters, beg_index);
 	while (beg_index != string::npos) {
@@ -89,7 +87,8 @@ vector<string> split_string(std::ofstream& log_fout, string& text, string& delim
 }
 
 vector<number_info> str_to_int(std::ofstream& log_fout, const vector<string>& words) {
-	log_fout << FormatTime(Now(), false) << " | " << "finding numbers in words\n";
+	log_print(log_fout);
+	log_fout << "finding numbers in words\n";
 	vector<number_info> chisla_iz_str;
 	for (int i = 0; i < words.size(); i++) {
 		if (word_check_on_number(words[i])) {
@@ -113,14 +112,15 @@ int sum_vec(const vector<number_info>& chisla) {
 }
 
 int max_abs_vec(std::ofstream& log_fout, vector<number_info>& chisla) {
-	log_fout << FormatTime(Now(), false) << " | " << "finding number with biggest absolute value\n";
+	log_print(log_fout);
+	log_fout << "finding number with biggest absolute value\n";
 	int max = chisla[0].value;
 	for (int i = 0; i < chisla.size(); i++) {
 		if (abs(max) < abs(chisla[i].value))
 			max = chisla[i].value;
 	}
-	log_fout << FormatTime(Now(), false) << " | " << "number with biggest absolute value\" " << max
-			 << "\"\n";
+	log_print(log_fout);
+	log_fout << "number with biggest absolute value\" " << max << "\"\n";
 	return max;
 }
 
@@ -148,24 +148,26 @@ void replace_target_number(string& text, string& from, string& to, string& delim
 	}
 }
 void open_file(std::ofstream& log_fout, std::ofstream& fout, const string& filename) {
-	log_fout << FormatTime(Now(), false) << " | " << "opening file \"" + filename + "\"\n";
+	log_print(log_fout);
+	log_fout << "opening file \"" + filename + "\"\n";
 	if (!fout.is_open()) {
-		log_fout << FormatTime(Now(), false) << " | "
-				 << "file \"" + filename + "\" hasn't been opened successfully\n";
+		log_print(log_fout);
+		log_fout << "file \"" + filename + "\" hasn't been opened successfully\n";
 		throw "Error: could not open file \"" + filename + "\"!!!";
 	}
-	log_fout << FormatTime(Now(), false) << " | "
-			 << "file \"" + filename + "\" has been opened successfully\n";
+	log_print(log_fout);
+	log_fout << "file \"" + filename + "\" has been opened successfully\n";
 }
 void open_file(std::ofstream& log_fout, std::ifstream& fin, const string& filename) {
-	log_fout << FormatTime(Now(), false) << " | " << "opening file \"" + filename + "\"\n";
+	log_print(log_fout);
+	log_fout << "opening file \"" + filename + "\"\n";
 	if (!fin.is_open()) {
-		log_fout << FormatTime(Now(), false) << " | "
-				 << "file \"" + filename + "\" hasn't been opened successfully\n";
+		log_print(log_fout);
+		log_fout << "file \"" + filename + "\" hasn't been opened successfully\n";
 		throw "Error: could not open file \"" + filename + "\"!!!";
 	}
-	log_fout << FormatTime(Now(), false) << " | "
-			 << "file \"" + filename + "\" has been opened successfully\n";
+	log_print(log_fout);
+	log_fout << "file \"" + filename + "\" has been opened successfully\n";
 }
 void open_file(std::ofstream& log_fout, const string& filename) {
 	if (!log_fout.is_open()) {
@@ -183,63 +185,65 @@ int main() {
 	const string output_filename = "output.txt";
 	const string log_filename = "log.txt";
 	std::ifstream fin{input_filename};
-	std::ofstream log_fout{log_filename, std::ios::app};
+	std::ofstream log_fout{log_filename};
+	std::ofstream fout{output_filename};
+	string delimiters;
 	try {
 		setlocale(LC_ALL, "ru-RU.UTF-8");
-		// cout << "Введите строку\n";
-		string input;
 		open_file(log_fout, log_filename);
 		open_file(log_fout, fin, input_filename);
-		is_empty_file(fin, input_filename);
-		log_fout << FormatTime(Now(), false) << " | "
-				 << "reading from \"" + input_filename + "\"\n";
-		getline(fin, input);
-		log_fout << FormatTime(Now(), false) << " | " << "got string:\"" + input + "\"\n";
-		// cout << "Введите разделители ";
-		string delimiters;
-		getline(fin, delimiters);
-		fin.close();
-		log_fout << FormatTime(Now(), false) << " | " << "got delimiters:\"" + delimiters + "\"\n";
-		vector<string> words = split_string(log_fout, input, delimiters);
-		vector<number_info> chisla = str_to_int(log_fout, words);
-		if (chisla.empty()) {
-			throw "Error: string haven't integers";
-		}
-		// output_vec(chisla);
-		//  cout << std::endl;
-		int sum = sum_vec(chisla);
-		// cout << "Сумма чисел = " << sum << std::endl;
-		int max_abs = max_abs_vec(log_fout, chisla);
-		string to_str = std::to_string(sum);
-		for (int i = 0; i < chisla.size(); i++) {
-			if (chisla[i].value == max_abs) {
-				replace_target_number(input, chisla[i].num_text, to_str, delimiters);
-			}
-		}
-		// cout << "Строка после замены\n " << input << std::endl;
-		log_fout << FormatTime(Now(), false) << " | "
-				 << "writing result to \"" + output_filename + "\"\n";
-		std::ofstream fout{output_filename};
 		open_file(log_fout, fout, output_filename);
-		fout << input;
-		fout.close();
-		log_fout << FormatTime(Now(), false) << " | " << "progam has ended with code 0";
-		log_fout.close();
-		return 0;
-
+		is_empty_file(fin, input_filename);
 	} catch (const std::string& e) {
 		std::cerr << e << std::endl;
 		if (log_fout.is_open()) {
-			log_fout << FormatTime(Now(), false) << " | " << e << "\n";
-			log_fout << FormatTime(Now(), false) << " | program has ended with code 1\n";
-		}
-		return 1;
-	} catch (const char* e) {
-		std::cerr << e << std::endl;
-		if (log_fout.is_open()) {
-			log_fout << FormatTime(Now(), false) << " | " << e << "\n";
+			log_print(log_fout);
+			log_fout << e << "\n";
 			log_fout << FormatTime(Now(), false) << " | program has ended with code 1\n";
 		}
 		return 1;
 	}
+	log_print(log_fout);
+	log_fout << "reading from \"" + input_filename + "\"\n";
+	getline(fin, delimiters);
+	log_print(log_fout);
+	log_fout << "got delimiters:\"" + delimiters + "\"\n";
+	string line;
+	while (getline(fin, line)) {
+		log_print(log_fout);
+		log_fout << "got line:\"" + line + "\"\n";
+		vector<string> words = split_string(log_fout, line, delimiters);
+		vector<number_info> chisla = str_to_int(log_fout, words);
+		try {
+			if (chisla.empty()) {
+				throw "Error: string haven't integers";
+			}
+			int sum = sum_vec(chisla);
+			int max_abs = max_abs_vec(log_fout, chisla);
+			string to_str = std::to_string(sum);
+			for (int i = 0; i < chisla.size(); i++) {
+				if (chisla[i].value == max_abs) {
+					replace_target_number(line, chisla[i].num_text, to_str, delimiters);
+				}
+			}
+			log_print(log_fout);
+			log_fout << "writing result to \"" + output_filename + "\"\n";
+			fout << line << std::endl;
+		} catch (const char* e) {
+			if (log_fout.is_open()) {
+				log_print(log_fout);
+				log_fout << e << "\n";
+			}
+			if (fout.is_open()) {
+				log_print(log_fout);
+				fout << line << " | line haven't numbers\n";
+			}
+		}
+	}
+	fout.close();
+	fin.close();
+	log_print(log_fout);
+	log_fout << "progam has ended with code 0";
+	log_fout.close();
+	return 0;
 }
